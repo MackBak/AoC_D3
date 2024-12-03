@@ -24,6 +24,18 @@ public class StringFilter {
         }
         return mulMatches;
     }
+
+    public List<Integer> pairMultiplyer(List<String> mulData) {
+        List<Integer> mulList = new ArrayList<>();
+        for (String mul : mulData) {
+            String numbers = mul.substring(4, mul.length() -1); // TODO: Check if this works. Should remove 4: 'mul(' and -1 ')' leaving the 2 numbers
+            String[] parts = numbers.split(",");
+            int x = Integer.parseInt(parts[0]);
+            int y = Integer.parseInt(parts[1]);
+            mulList.add(x * y);
+        }
+        return mulList;
+    }
 }
 
 

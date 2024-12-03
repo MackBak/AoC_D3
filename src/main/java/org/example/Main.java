@@ -15,7 +15,16 @@ public class Main {
         StringFilter stringFilter = new StringFilter(content);
         List<String> results = stringFilter.mulFilter();
 
-        System.out.println("### RESULTS ###:\n" + results);
+        List<Integer> multipliedResults = stringFilter.pairMultiplyer(results);
+        System.out.println("### RESULTS ###:\n" + multipliedResults);
+        long sum = 0;
+
+        System.out.println("Iterating this many times: " + multipliedResults.size());
+        for (int i = 0; i < multipliedResults.size() ; i++) {
+            multipliedResults.get(i);
+            sum += multipliedResults.get(i);
+        }
+        System.out.println("\n### RESULTS ###:\n" + sum);
 
 
     }
