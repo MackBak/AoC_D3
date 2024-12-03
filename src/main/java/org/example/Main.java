@@ -8,7 +8,7 @@ import java.util.List;
 public class Main {
     public static void main(String[] args) throws IOException {
 
-        String filePath = "C:\\Users\\mackb\\IdeaProjects\\AoC_D3\\src\\main\\resources\\input.txt";
+        String filePath = "src\\main\\resources\\input.txt";
         String content = new String(Files.readAllBytes(Paths.get(filePath)));
         System.out.println(content);
 
